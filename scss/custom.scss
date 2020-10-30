@@ -1,0 +1,39 @@
+// Import Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Spartan:wght@700;900&display=swap');
+
+// Required
+@import "../bootstrap/functions";
+@import "../bootstrap/variables";
+@import "../bootstrap/mixins";
+
+// Re-define BS colors
+$orange: #f7931e;
+$yellow: #fbb03b;
+$green:#629e51;
+$red:#c14339;
+
+// Define new colors
+$pink:#ed8ee2;
+$dark-green:#3d6833;
+$dark-grey:#182614;
+$grey:#d8d8d8;
+$light-grey:#eae8e8;
+
+// Map colors
+$colors: ("orange":#f7931e, "yellow":#fbb03b, "green":#629e51, "red":#c14339, "pink":$pink, "dark-green":$dark-green, "dark-grey": $dark-grey, "grey":$grey, "light-grey":$light-grey);
+
+//Map theme-colors
+$theme-colors: ("primary": $dark-green, "success":$green, "warning":$yellow, "dark":$dark-grey, "light":$light-grey, "info":$pink);
+
+// customize theme
+$body-bg: white;
+$body-color: $dark-grey;
+$font-family-sans-serif: 'Roboto', sans-serif;
+$headings-font-family:'Spartan', sans-serif;
+$input-font-family: 'Roboto', sans-serif;
+$font-family-base: $input-font-family;
+
+// Bootstrap
+@import "../bootstrap/bootstrap.scss";
+
+// Typography
