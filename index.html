@@ -45,18 +45,256 @@
 
 
 <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary navbar-hat">
+        <div class="container">
+            <a class="navbar-brand" href="./"><img class="logo-navbar" src="./img/logo.svg" alt="homepage"><span class="sr-only">(current)</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sign in</a>
+                    </li>
+                    <!--
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+-->
+                </ul>
+                <form class="form-inline">
+                    <a class="btn btn-warning ml-0 ml-md-3" href="#!">Explore</a>
+                </form>
+            </div>
+        </div>
+    </nav>
+
     <main>
-        <h1 class="text-primary">this is a test</h1>
+        <div class="results-layout">
+
+            <!-- filters -->
+            <nav class="filters">
+               
+                <a href="#" class="d-block d-lg-none close-mobile-filters"><i class="fad fa-times-circle fa-2x"></i></a>
+                
+                <h2>Find a project</h2>
+
+                <a class="d-block" data-toggle="collapse" href="#filter1" role="button">
+                    + Province
+                </a>
+                <div class="collapse" id="filter1">
+                    <div class="">
+                        <div class="container">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="province1">
+                                <label class="custom-control-label" for="province1">Ontario</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="province2">
+                                <label class="custom-control-label" for="province2">Quebec</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="province3">
+                                <label class="custom-control-label" for="province3">British-Columbia</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="province4">
+                                <label class="custom-control-label" for="province4">Alberta</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- filter 2 -->
+                <a class="d-block" data-toggle="collapse" href="#filter2" role="button">
+                    + City
+                </a>
+                <div class="collapse" id="filter2">
+                    <div class="">
+                        <div class="container">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="city1">
+                                <label class="custom-control-label" for="city1">Ottawa</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="city2">
+                                <label class="custom-control-label" for="city2">Toronto</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="city3">
+                                <label class="custom-control-label" for="city3">Montreal</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- filter 3 -->
+                <a class="d-block" data-toggle="collapse" href="#filter3" role="button">
+                    + Issue area
+                </a>
+                <div class="collapse" id="filter3">
+                    <div class="">
+                        <div class="container">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="issueArea1">
+                                <label class="custom-control-label" for="issueArea1">Issue A</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="issueArea2">
+                                <label class="custom-control-label" for="issueArea2">Issue B</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="issueArea3">
+                                <label class="custom-control-label" for="issueArea3">Issue C</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- filter 4 -->
+                <a class="d-block" data-toggle="collapse" href="#filter4" role="button">
+                    + SDG
+                </a>
+                <div class="collapse" id="filter4">
+                    <div class="">
+                        <div class="container">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="sdg1">
+                                <label class="custom-control-label" for="sdg1">SDG 1</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="sdg2">
+                                <label class="custom-control-label" for="sdg2">SDG 2</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="sdg3">
+                                <label class="custom-control-label" for="sdg3">SDG 3</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="sdg4">
+                                <label class="custom-control-label" for="sdg4">SDG 4</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="sdg5">
+                                <label class="custom-control-label" for="sdg5">SDG 5</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="sdg6">
+                                <label class="custom-control-label" for="sdg6">SDG 6</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- filter 5 -->
+                <a class="d-block" data-toggle="collapse" href="#filter5" role="button">
+                    + Gender
+                </a>
+                <div class="collapse" id="filter5">
+                    <div class="">
+                        <div class="container">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="gender1">
+                                <label class="custom-control-label" for="gender1">Female</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="gender2">
+                                <label class="custom-control-label" for="gender2">Male</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="gender3">
+                                <label class="custom-control-label" for="gender3">Not specified</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- filter 6 -->
+                <a class="d-block" data-toggle="collapse" href="#filter6" role="button">
+                    + BIPOC
+                </a>
+                <div class="collapse" id="filter6">
+                    <div class="">
+                        <div class="container">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="bipoc1">
+                                <label class="custom-control-label" for="bipoc1">Black</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="bipoc12">
+                                <label class="custom-control-label" for="bipoc2">Indigenous</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="bipoc3">
+                                <label class="custom-control-label" for="bipoc3">People of color</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </nav>
+
+            <!-- Main content -->
+            <section class="results">
+
+                <!-- Dismissable hero banner -->
+                <div class="container-fluid">
+                    <div class="hero-dismissable">
+                        <div class="hero-text order-1 order-md-0">
+                            <h1><span class="supertitle">The state of the future is in your hands</span>What do you want the world to look like in 2030?</h1>
+                            <p>You told us what your favourite recovery projects were. Now, your votes can help feature the projects inour stories and artwork through 2021. #my2030</p>
+                            <a class="btn btn-primary" href="#!">View all projects</a>
+                            <a class="d-block mt-3 small" href="#!">Create a free Future of Good account to vote for your favourite projects.</a>
+                        </div>
+                        <img class="hero-img order-0 order-md-1" src="./img/artwork.svg" alt="">
+                        <a href="#" class="close-this"><i class="fad fa-times-circle fa-2x"></i></a>
+                    </div>
+                </div>
+
+                <!-- Results header -->
+                    <div class="container-fluid results-header">
+                        <span class="d-inline-block d-lg-none">
+                            <a class="open-mobile-filters py-3" href="#!"><i class="fas fa-sliders-h"></i></a>
+                        </span>
+                        <span class="py-3">Showing 100 results</span>
+                        <div class="custom-control custom-switch py-3">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                            <label class="custom-control-label" for="customSwitch1">Map</label>
+                        </div>
+                    </div>
+
+                <!-- Card view -->
+                <section class="card-view">
+
+                </section>
+
+                <!-- Map view -->
+                <section class="map-view">
+
+                </section>
+            </section>
+        </div>
     </main>
+
     <footer>
-        
+
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/scripts.js"></script>
-
 </body>
 
 </html>
