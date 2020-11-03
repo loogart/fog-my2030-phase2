@@ -1995,7 +1995,7 @@ pre code {
   background-color: #fff;
   border-color: #80bdff;
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(121, 175, 108, 0.36);
 }
 .form-control::placeholder {
   color: #6c757d;
@@ -2927,7 +2927,7 @@ input[type=button].btn-block {
   position: relative;
   height: 0;
   overflow: hidden;
-  transition: height 0.35s ease;
+  transition: height 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .collapsing {
@@ -3469,8 +3469,8 @@ input[type=button].btn-block {
 }
 .custom-control-input:checked ~ .custom-control-label::before {
   color: #fff;
-  border-color: #007bff;
-  background-color: #007bff;
+  border-color: #629e51;
+  background-color: #629e51;
 }
 .custom-control-input:focus ~ .custom-control-label::before {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
@@ -3480,7 +3480,7 @@ input[type=button].btn-block {
 }
 .custom-control-input:not(:disabled):active ~ .custom-control-label::before {
   color: #fff;
-  background-color: #b3d7ff;
+  background-color: #629e51;
   border-color: #b3d7ff;
 }
 .custom-control-input[disabled] ~ .custom-control-label, .custom-control-input:disabled ~ .custom-control-label {
@@ -9952,7 +9952,8 @@ h3 {
 
 .filters {
   display: block;
-  width: 420px;
+  width: 320px;
+  padding: 2.5rem 1.5rem;
   height: 100%;
 }
 @media (max-width: 767.98px) {
@@ -9971,6 +9972,24 @@ h3 {
     z-index: 3;
     box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02), 0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035), 0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
   }
+}
+
+.list-filters li {
+  border-bottom: 2px solid #eae8e8;
+}
+
+.filter-accordion {
+  display: block;
+  padding: 20px 0;
+  color: #182614;
+}
+.filter-accordion:hover {
+  text-decoration: none;
+  background-color: #fbfbfb;
+}
+
+.filter-choices {
+  padding-bottom: 20px;
 }
 
 .results {
@@ -10035,6 +10054,7 @@ h3 {
   width: 100%;
   justify-content: space-between;
   background-color: white;
+  border-bottom: 2px solid #eae8e8;
 }
 
 .open-mobile-filters {
@@ -10054,10 +10074,182 @@ h3 {
   margin-bottom: 15px;
 }
 
+.card-view {
+  padding: 3rem 0;
+}
+
+.card {
+  border: 3px solid #eae8e8;
+  border-radius: 0;
+  transition: all 0.15s ease-in-out;
+  position: relative;
+  margin-bottom: 2.5rem;
+  align-items: stretch;
+}
+.card .card-img-top {
+  width: 100%;
+  background-color: #eae8e8;
+  height: 120px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin-left: -8px;
+  margin-top: -8px;
+}
+.card .card-title {
+  color: #3d6833;
+  font-size: 16px;
+  font-weight: 900;
+}
+.card .card-text {
+  font-size: 13px;
+}
+.card:hover {
+  box-shadow: 0 1.8px 3.3px rgba(0, 0, 0, 0.028), 0 6px 10.9px rgba(0, 0, 0, 0.042), 0 27px 49px rgba(0, 0, 0, 0.07);
+}
+
+.filter-choices .custom-checkbox {
+  margin-bottom: 0.5rem;
+}
+
+.filter-plus {
+  transition: all 0.25s ease-in-out;
+  margin-right: 0.5rem;
+}
+.filter-plus.filter-plus-open {
+  transform: rotate(45deg);
+  display: inline-block;
+}
+
+.badge {
+  color: white;
+}
+.badge.badge-sdg1 {
+  background-color: #D23A44;
+}
+.badge.badge-sdg1::after {
+  content: "No poverty";
+}
+.badge.badge-sdg2 {
+  background-color: #D5A84F;
+}
+.badge.badge-sdg2::after {
+  content: "Zero Hunger";
+}
+.badge.badge-sdg3 {
+  background-color: #629E51;
+}
+.badge.badge-sdg3::after {
+  content: "Good Health";
+}
+.badge.badge-sdg4 {
+  background-color: #B73336;
+}
+.badge.badge-sdg4::after {
+  content: "Quality Education";
+}
+.badge.badge-sdg5 {
+  background-color: #DC4F3A;
+}
+.badge.badge-sdg5::after {
+  content: "Gender Equality";
+}
+.badge.badge-sdg6 {
+  background-color: #5CBDE2;
+}
+.badge.badge-sdg6::after {
+  content: "Clean Water";
+}
+.badge.badge-sdg7 {
+  background-color: #F2C546;
+}
+.badge.badge-sdg7::after {
+  content: "Clean Energy";
+}
+.badge.badge-sdg8 {
+  background-color: #962A45;
+}
+.badge.badge-sdg8::after {
+  content: "Decent Work";
+}
+.badge.badge-sdg9 {
+  background-color: #E1713F;
+}
+.badge.badge-sdg9::after {
+  content: "Innovation";
+}
+.badge.badge-sdg10 {
+  background-color: #CE3481;
+}
+.badge.badge-sdg10::after {
+  content: "Reduced Inequalities";
+}
+.badge.badge-sdg11 {
+  background-color: #EBA046;
+}
+.badge.badge-sdg11::after {
+  content: "Sustainable Cities";
+}
+.badge.badge-sdg12 {
+  background-color: #B78E40;
+}
+.badge.badge-sdg12::after {
+  content: "Responsible Consumption";
+}
+.badge.badge-sdg13 {
+  background-color: #507C4C;
+}
+.badge.badge-sdg13::after {
+  content: "Climate Action";
+}
+.badge.badge-sdg14 {
+  background-color: #4896CF;
+}
+.badge.badge-sdg14::after {
+  content: "Life Below Water";
+}
+.badge.badge-sdg15 {
+  background-color: #72B757;
+}
+.badge.badge-sdg15::after {
+  content: "Life on Land";
+}
+.badge.badge-sdg16 {
+  background-color: #30699B;
+}
+.badge.badge-sdg16::after {
+  content: "Peace, Justice";
+}
+.badge.badge-sdg17 {
+  background-color: #244968;
+}
+.badge.badge-sdg17::after {
+  content: "Partnerships";
+}
+
+#map {
+  width: 100%;
+  height: 80vh;
+}
+
 footer {
   background-color: #eae8e8;
   padding-top: 80px;
   padding-bottom: 80px;
+}
+footer p {
+  font-size: 14px;
+}
+footer a {
+  color: #182614;
+  font-size: 14px;
+}
+footer h5 {
+  color: #3d6833;
+  font-size: 15px;
+  margin-bottom: 1rem;
+}
+footer li {
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=custom.css.map */

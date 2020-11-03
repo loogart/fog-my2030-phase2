@@ -89,164 +89,175 @@
 
                 <a href="#" class="d-inline-block d-md-none close-mobile-filters"><i class="fad fa-times-circle fa-2x"></i></a>
 
-                <h2>Find a project</h2>
+                <h2 class="h5 mt-0">Find a project</h2>
 
-                <a class="d-block" data-toggle="collapse" href="#filter1" role="button">
-                    + Province
-                </a>
-                <div class="collapse" id="filter1">
-                    <div class="">
-                        <div class="container">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="province1">
-                                <label class="custom-control-label" for="province1">Ontario</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="province2">
-                                <label class="custom-control-label" for="province2">Quebec</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="province3">
-                                <label class="custom-control-label" for="province3">British-Columbia</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="province4">
-                                <label class="custom-control-label" for="province4">Alberta</label>
+                <ul class="list-unstyled list-filters">
+                    <!-- filter 1 -->
+                    <li>
+                        <a class="filter-accordion" data-toggle="collapse" href="#filter1" role="button">
+                            <span class="filter-plus">+</span> Province
+                        </a>
+                        <div class="collapse" id="filter1">
+                            <div class="filter-choices">
+                                <div class="container">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="province1">
+                                        <label class="custom-control-label" for="province1">Ontario</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="province2">
+                                        <label class="custom-control-label" for="province2">Quebec</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="province3">
+                                        <label class="custom-control-label" for="province3">British-Columbia</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="province4">
+                                        <label class="custom-control-label" for="province4">Alberta</label>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </li>
 
-                <!-- filter 2 -->
-                <a class="d-block" data-toggle="collapse" href="#filter2" role="button">
-                    + City
-                </a>
-                <div class="collapse" id="filter2">
-                    <div class="">
-                        <div class="container">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="city1">
-                                <label class="custom-control-label" for="city1">Ottawa</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="city2">
-                                <label class="custom-control-label" for="city2">Toronto</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="city3">
-                                <label class="custom-control-label" for="city3">Montreal</label>
+                    <!-- filter 2 -->
+                    <li>
+                        <a class="filter-accordion" data-toggle="collapse" href="#filter2" role="button">
+                            <span class="filter-plus">+</span> City
+                        </a>
+                        <div class="collapse" id="filter2">
+                            <div class="filter-choices">
+                                <div class="container">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="city1">
+                                        <label class="custom-control-label" for="city1">Ottawa</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="city2">
+                                        <label class="custom-control-label" for="city2">Toronto</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="city3">
+                                        <label class="custom-control-label" for="city3">Montreal</label>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <!-- filter 3 -->
-                <a class="d-block" data-toggle="collapse" href="#filter3" role="button">
-                    + Issue area
-                </a>
-                <div class="collapse" id="filter3">
-                    <div class="">
-                        <div class="container">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="issueArea1">
-                                <label class="custom-control-label" for="issueArea1">Issue A</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="issueArea2">
-                                <label class="custom-control-label" for="issueArea2">Issue B</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="issueArea3">
-                                <label class="custom-control-label" for="issueArea3">Issue C</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- filter 4 -->
-                <a class="d-block" data-toggle="collapse" href="#filter4" role="button">
-                    + SDG
-                </a>
-                <div class="collapse" id="filter4">
-                    <div class="">
-                        <div class="container">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="sdg1">
-                                <label class="custom-control-label" for="sdg1">SDG 1</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="sdg2">
-                                <label class="custom-control-label" for="sdg2">SDG 2</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="sdg3">
-                                <label class="custom-control-label" for="sdg3">SDG 3</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="sdg4">
-                                <label class="custom-control-label" for="sdg4">SDG 4</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="sdg5">
-                                <label class="custom-control-label" for="sdg5">SDG 5</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="sdg6">
-                                <label class="custom-control-label" for="sdg6">SDG 6</label>
+                    </li>
+                    <!-- filter 3 -->
+                    <li>
+                        <a class="filter-accordion" data-toggle="collapse" href="#filter3" role="button">
+                            <span class="filter-plus">+</span> Issue area
+                        </a>
+                        <div class="collapse" id="filter3">
+                            <div class="filter-choices">
+                                <div class="container">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="issueArea1">
+                                        <label class="custom-control-label" for="issueArea1">Issue A</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="issueArea2">
+                                        <label class="custom-control-label" for="issueArea2">Issue B</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="issueArea3">
+                                        <label class="custom-control-label" for="issueArea3">Issue C</label>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <!-- filter 5 -->
-                <a class="d-block" data-toggle="collapse" href="#filter5" role="button">
-                    + Gender
-                </a>
-                <div class="collapse" id="filter5">
-                    <div class="">
-                        <div class="container">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="gender1">
-                                <label class="custom-control-label" for="gender1">Female</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="gender2">
-                                <label class="custom-control-label" for="gender2">Male</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="gender3">
-                                <label class="custom-control-label" for="gender3">Not specified</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- filter 6 -->
-                <a class="d-block" data-toggle="collapse" href="#filter6" role="button">
-                    + BIPOC
-                </a>
-                <div class="collapse" id="filter6">
-                    <div class="">
-                        <div class="container">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="bipoc1">
-                                <label class="custom-control-label" for="bipoc1">Black</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="bipoc12">
-                                <label class="custom-control-label" for="bipoc2">Indigenous</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="bipoc3">
-                                <label class="custom-control-label" for="bipoc3">People of color</label>
+                    </li>
+                    <!-- filter 4 -->
+                    <li>
+                        <a class="filter-accordion" data-toggle="collapse" href="#filter4" role="button">
+                            <span class="filter-plus">+</span> SDG
+                        </a>
+                        <div class="collapse" id="filter4">
+                            <div class="filter-choices">
+                                <div class="container">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="sdg1">
+                                        <label class="custom-control-label" for="sdg1">SDG 1</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="sdg2">
+                                        <label class="custom-control-label" for="sdg2">SDG 2</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="sdg3">
+                                        <label class="custom-control-label" for="sdg3">SDG 3</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="sdg4">
+                                        <label class="custom-control-label" for="sdg4">SDG 4</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="sdg5">
+                                        <label class="custom-control-label" for="sdg5">SDG 5</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="sdg6">
+                                        <label class="custom-control-label" for="sdg6">SDG 6</label>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-
+                    </li>
+                    <!-- filter 5 -->
+                    <li>
+                        <a class="filter-accordion" data-toggle="collapse" href="#filter5" role="button">
+                            <span class="filter-plus">+</span> Gender
+                        </a>
+                        <div class="collapse" id="filter5">
+                            <div class="filter-choices">
+                                <div class="container">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="gender1">
+                                        <label class="custom-control-label" for="gender1">Female</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="gender2">
+                                        <label class="custom-control-label" for="gender2">Male</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="gender3">
+                                        <label class="custom-control-label" for="gender3">Not specified</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- filter 6 -->
+                    <li>
+                        <a class="filter-accordion" data-toggle="collapse" href="#filter6" role="button">
+                            <span class="filter-plus">+</span> BIPOC
+                        </a>
+                        <div class="collapse" id="filter6">
+                            <div class="filter-choices">
+                                <div class="container">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="bipoc1">
+                                        <label class="custom-control-label" for="bipoc1">Black</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="bipoc12">
+                                        <label class="custom-control-label" for="bipoc2">Indigenous</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="bipoc3">
+                                        <label class="custom-control-label" for="bipoc3">People of color</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </nav>
 
             <!-- Main content -->
-            <section class="results" style="height:2000px">
+            <section class="results">
 
                 <!-- Dismissable hero banner -->
                 <div class="container-fluid">
@@ -275,24 +286,305 @@
                 </div>
 
                 <!-- Card view -->
-                <section class="card-view">
+                <section class="card-view" id="resultsGrid">
+                    <div class="container-fluid">
+                        <div class="row">
 
+                            <!-- card 1-->
+                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Name of initiative</h5>
+                                        <p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>
+                                        <div class="d-flex justify-content-between flex-wrap">
+                                            <a href="#" class="btn btn-sm btn-outline-primary mb-2">View details</a>
+                                            <a href="#" class="btn btn-sm btn-primary mb-2">Vote</a>
+                                        </div>
+                                        <div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg1 pr-2">&nbsp;</span></li>
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg6 pr-2">&nbsp;</span></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card 2-->
+                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Name of initiative</h5>
+                                        <p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>
+                                        <div class="d-flex justify-content-between flex-wrap">
+                                            <a href="#" class="btn btn-sm btn-outline-primary mb-2">View details</a>
+                                            <a href="#" class="btn btn-sm btn-primary mb-2">Vote</a>
+                                        </div>
+                                        <div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg2 pr-2">&nbsp;</span></li>
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg3 pr-2">&nbsp;</span></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card 3-->
+                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Name of initiative</h5>
+                                        <p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>
+                                        <div class="d-flex justify-content-between flex-wrap">
+                                            <a href="#" class="btn btn-sm btn-outline-primary mb-2">View details</a>
+                                            <a href="#" class="btn btn-sm btn-primary mb-2">Vote</a>
+                                        </div>
+                                        <div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg1 pr-2">&nbsp;</span></li>
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg6 pr-2">&nbsp;</span></li>
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg10 pr-2">&nbsp;</span></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card 4-->
+                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Name of initiative</h5>
+                                        <p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>
+                                        <div class="d-flex justify-content-between flex-wrap">
+                                            <a href="#" class="btn btn-sm btn-outline-primary mb-2">View details</a>
+                                            <a href="#" class="btn btn-sm btn-primary mb-2">Vote</a>
+                                        </div>
+                                        <div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg4 pr-2">&nbsp;</span></li>
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg5 pr-2">&nbsp;</span></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- card 5-->
+                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Name of initiative</h5>
+                                        <p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>
+                                        <div class="d-flex justify-content-between flex-wrap">
+                                            <a href="#" class="btn btn-sm btn-outline-primary mb-2">View details</a>
+                                            <a href="#" class="btn btn-sm btn-primary mb-2">Vote</a>
+                                        </div>
+                                        <div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg6 pr-2">&nbsp;</span></li>
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg7 pr-2">&nbsp;</span></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card 6 -->
+                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Name of initiative</h5>
+                                        <p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>
+                                        <div class="d-flex justify-content-between flex-wrap">
+                                            <a href="#" class="btn btn-sm btn-outline-primary mb-2">View details</a>
+                                            <a href="#" class="btn btn-sm btn-primary mb-2">Vote</a>
+                                        </div>
+                                        <div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg8 pr-2">&nbsp;</span></li>
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg9 pr-2">&nbsp;</span></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card 7 -->
+                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Name of initiative</h5>
+                                        <p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>
+                                        <div class="d-flex justify-content-between flex-wrap">
+                                            <a href="#" class="btn btn-sm btn-outline-primary mb-2">View details</a>
+                                            <a href="#" class="btn btn-sm btn-primary mb-2">Vote</a>
+                                        </div>
+                                        <div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg10 pr-2">&nbsp;</span></li>
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg11 pr-2">&nbsp;</span></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card 8 -->
+                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Name of initiative</h5>
+                                        <p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>
+                                        <div class="d-flex justify-content-between flex-wrap">
+                                            <a href="#" class="btn btn-sm btn-outline-primary mb-2">View details</a>
+                                            <a href="#" class="btn btn-sm btn-primary mb-2">Vote</a>
+                                        </div>
+                                        <div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg12 pr-2">&nbsp;</span></li>
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg13 pr-2">&nbsp;</span></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card 9-->
+                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Name of initiative</h5>
+                                        <p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>
+                                        <div class="d-flex justify-content-between flex-wrap">
+                                            <a href="#" class="btn btn-sm btn-outline-primary mb-2">View details</a>
+                                            <a href="#" class="btn btn-sm btn-primary mb-2">Vote</a>
+                                        </div>
+                                        <div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg14 pr-2">&nbsp;</span></li>
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg15 pr-2">&nbsp;</span></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- card 10-->
+                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Name of initiative</h5>
+                                        <p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>
+                                        <div class="d-flex justify-content-between flex-wrap">
+                                            <a href="#" class="btn btn-sm btn-outline-primary mb-2">View details</a>
+                                            <a href="#" class="btn btn-sm btn-primary mb-2">Vote</a>
+                                        </div>
+                                        <div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg15 pr-2">&nbsp;</span></li>
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg16 pr-2">&nbsp;</span></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- card 11-->
+                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Name of initiative</h5>
+                                        <p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>
+                                        <div class="d-flex justify-content-between flex-wrap">
+                                            <a href="#" class="btn btn-sm btn-outline-primary mb-2">View details</a>
+                                            <a href="#" class="btn btn-sm btn-primary mb-2">Vote</a>
+                                        </div>
+                                        <div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg1 pr-2">&nbsp;</span></li>
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg16 pr-2">&nbsp;</span></li>
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg17 pr-2">&nbsp;</span></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- load more button -->
+                            <div class="col-12 text-center">
+                                <a href="#" class="btn btn-outline-secondary mb-2"><i class="fas fa-plus mr-2"></i>Load more projects</a>
+
+                            </div>
+
+                        </div>
+                    </div>
                 </section>
 
                 <!-- Map view -->
-                <section class="map-view">
-
+                <section class="map-view d-none" id="resultsMap">
+                    <div id="map"></div>
                 </section>
             </section>
         </div>
     </main>
 
     <footer>
-
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Top Recovery Projects</h5>
+                    <p><a href="https://goo.gl/maps/N3AmBy2LsC9Rugz58" target="_blank">123 Slater St. 6th &amp; 7th Floor,<br> Ottawa, ON K1P 5H2</a><br><a href="tel:16136803506" target="_blank">(613) 680-3506</a></p>
+                </div>
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h5>Stay informed</h5>
+                    <form>
+                        <div class="form-row">
+                            <div class="col-8">
+                                <label class="sr-only" for="inlineFormInputName">Email address</label>
+                                <input type="email" class="form-control" id="inlineFormInputName" placeholder="">
+                            </div>
+                            <div class="col-4">
+                                <button type="submit" class="btn btn-primary">Subscribe</button>
+                            </div>
+                        </div>
+                        <small id="passwordHelpBlock" class="form-text text-muted mt-2">We will send you updates about Canada's Top Recovery Projects.</small>
+                    </form>
+                </div>
+                <div class="col-md-3">
+                    <h5>Follow us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="" target="_blank"><i class="fab fa-twitter text-primary mr-2"></i>Twitter</a></li>
+                        <li><a href="" target="_blank"><i class="fab fa-facebook text-primary mr-2"></i>Facebook</a></li>
+                        <li><a href="" target="_blank"><i class="fab fa-instagram text-primary mr-2"></i>Instagram</a></li>
+                        <li><a href="" target="_blank"><i class="fab fa-linkedin text-primary mr-2"></i>LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between mt-5">
+                <span class="small text-muted">© 2020 Future of Good. All right reserved.</span>
+                <span><a href="#!" target="_blank" class="small text-muted">Privacy policy</a><span class="small text-muted mx-2">|</span><a href="#!" target="_blank" class="small text-muted">Terms and conditions</a></span>
+            </div>
+        </div>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxEirwPY5lQXNNXuY9lzjQIwGJlWby7Nw&callback=initMap" async defer></script>
     <script src="./js/scripts.js"></script>
 </body></html>
