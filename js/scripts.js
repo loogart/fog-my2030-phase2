@@ -245,8 +245,8 @@ function initMap() {
         '<h5 class="card-title">Name of initiative</h5>' +
         '<p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>' +
         '<div class="d-flex justify-content-between flex-wrap">' +
-        '<a href="#" class="btn btn-sm btn-outline-primary mb-2">View details</a>' +
-        '<a href="#" class="btn btn-sm btn-primary mb-2">Vote</a>' +
+        '<a href="project.html" class="btn btn-sm btn-outline-primary mb-2">View details</a>' +
+        '<a href="#!" class="btn btn-sm btn-primary mb-2 vote-now" data-toggle="modal" data-target="#popupVoted">Vote</a>' +
         '</div>' +
         '<div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">' +
         '<ul class="list-inline mb-0">' +
@@ -284,8 +284,8 @@ function initMap() {
         '<h5 class="card-title">Name of initiative</h5>' +
         '<p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>' +
         '<div class="d-flex justify-content-between flex-wrap">' +
-        '<a href="#" class="btn btn-sm btn-outline-primary mb-2">View details</a>' +
-        '<a href="#" class="btn btn-sm btn-primary mb-2">Vote</a>' +
+        '<a href="project.html" class="btn btn-sm btn-outline-primary mb-2">View details</a>' +
+        '<a href="#!" class="btn btn-sm btn-primary mb-2 vote-now" data-toggle="modal" data-target="#popupVoted">Vote</a>' +
         '</div>' +
         '<div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">' +
         '<ul class="list-inline mb-0">' +
@@ -323,8 +323,8 @@ function initMap() {
         '<h5 class="card-title">Name of initiative</h5>' +
         '<p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>' +
         '<div class="d-flex justify-content-between flex-wrap">' +
-        '<a href="#" class="btn btn-sm btn-outline-primary mb-2">View details</a>' +
-        '<a href="#" class="btn btn-sm btn-primary mb-2">Vote</a>' +
+        '<a href="project.html" class="btn btn-sm btn-outline-primary mb-2">View details</a>' +
+        '<a href="#!" class="btn btn-sm btn-primary mb-2 vote-now" data-toggle="modal" data-target="#popupVoted">Vote</a>' +
         '</div>' +
         '<div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">' +
         '<ul class="list-inline mb-0">' +
@@ -362,8 +362,8 @@ function initMap() {
         '<h5 class="card-title">Name of initiative</h5>' +
         '<p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>' +
         '<div class="d-flex justify-content-between flex-wrap">' +
-        '<a href="#" class="btn btn-sm btn-outline-primary mb-2">View details</a>' +
-        '<a href="#" class="btn btn-sm btn-primary mb-2">Vote</a>' +
+        '<a href="project.html" class="btn btn-sm btn-outline-primary mb-2">View details</a>' +
+        '<a href="#!" class="btn btn-sm btn-primary mb-2 vote-now" data-toggle="modal" data-target="#popupVoted">Vote</a>' +
         '</div>' +
         '<div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">' +
         '<ul class="list-inline mb-0">' +
