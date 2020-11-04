@@ -557,20 +557,25 @@
 
     <!-- Popup Voted -->
     <div class="modal fade" id="popupVoted" data-keyboard="false" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-sm modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-body p-4">
                     <div class="text-center">
                         <img class="icon-voted" src="./img/icon_voted.svg" alt="">
                         <h5 class="mb-3" id="exampleModalLabel">Thanks for voting!</h5>
-                        <p>Your support for this project is helping shape the future!</p>
+                        <p>Your support for this project is helping shape the future!<br>Show your support on social media.</p>
+                        <div class="d-flex flex-wrap justify-content-center my-3">
+                            <a href="#!" class="btn btn-sm btn-outline-primary m-2"><i class="fab fa-twitter mr-2"></i>Twitter</a>
+                            <a href="#!" class="btn btn-sm btn-outline-primary m-2 mb-2"><i class="fab fa-facebook mr-2"></i>Facebook</a>
+                            <a href="#!" class="btn btn-sm btn-outline-primary m-2"><i class="fab fa-linkedin mr-2"></i>LinkedIn</a>
+                        </div>
                         <a href="#!" class="text-dark" data-dismiss="modal">Close this window</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+
     <!-- Popup Unvoted -->
     <div class="modal fade" id="popupUnvoted" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-sm modal-dialog-centered">
@@ -581,8 +586,8 @@
                         <h5 class="mb-3" id="exampleModalLabel">Remove your vote?</h5>
                         <p>You are about to remove your vote for this project. Are you sure you want to continue?</p>
                         <div class="d-flex justify-content-between">
-                        <a href="#!" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</a>
-                        <a href="#!" class="btn btn-danger shadow" data-dismiss="modal" id="confirmRemove">Continue</a>
+                            <a href="#!" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</a>
+                            <a href="#!" class="btn btn-danger shadow" data-dismiss="modal" id="confirmRemove">Continue</a>
                         </div>
                     </div>
                 </div>
@@ -634,5 +639,4 @@
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxEirwPY5lQXNNXuY9lzjQIwGJlWby7Nw&callback=initMap" async defer></script>
     <script src="./js/scripts.js"></script>
-</body>
-</html>
+</body></html>
