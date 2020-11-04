@@ -48,6 +48,13 @@ $custom-control-indicator-active-bg:$green;
 $custom-control-indicator-checked-border-color:$green;
 $input-focus-box-shadow:0 0 0 0.2rem rgba(121, 175, 108, 0.36);
 $transition-collapse:height .15s ease-in-out;
+$modal-content-border-radius: 24px;
+$modal-header-border-width:0;
+$modal-footer-border-width:0;
+$modal-header-border-color:transparent;
+$modal-footer-border-color:transparent;
+$modal-fade-transform: scale(1.2) translate(0, 50px);
+$modal-transition: transform .15s ease-out;
 
 // Bootstrap
 @import "../bootstrap/bootstrap.scss";
@@ -80,18 +87,25 @@ $transition-collapse:height .15s ease-in-out;
     display: flex;
     height: 100%;
     width: 100%;
+    position: relative;
 }
 
 .filters {
     display: block;
     width: 320px;
     padding: 2.5rem 1.5rem;
+    max-height: 100vh;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1;
+    overflow: scroll;
 
     @include media-breakpoint-down(sm) {
         display: none;
 
         &.d-block {
-            width: 69%;
+            width: 75%;
             height: 100%;
             position: fixed;
             top: 0;
@@ -111,7 +125,6 @@ $transition-collapse:height .15s ease-in-out;
 
     }
 
-    height:100%;
 }
 
 .list-filters li {
@@ -201,6 +214,10 @@ $transition-collapse:height .15s ease-in-out;
     justify-content: space-between;
     background-color: white;
     border-bottom: 2px solid $light-grey;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .open-mobile-filters {
@@ -234,6 +251,7 @@ $transition-collapse:height .15s ease-in-out;
 
     .card-img-top {
         width: 100%;
+        object-fit: cover;
         background-color: $light-grey;
         height: 120px;
         border-top-left-radius: 0;
@@ -262,14 +280,15 @@ $transition-collapse:height .15s ease-in-out;
     }
 }
 
-.filter-choices .custom-checkbox{
+.filter-choices .custom-checkbox {
     margin-bottom: $spacer/2;
 }
 
-.filter-plus{
+.filter-plus {
     transition: all .25s ease-in-out;
     margin-right: $spacer/2;
-    &.filter-plus-open{
+
+    &.filter-plus-open {
         transform: rotate(45deg);
         display: inline-block;
     }
@@ -421,6 +440,38 @@ $transition-collapse:height .15s ease-in-out;
 #map {
     width: 100%;
     height: 80vh;
+}
+
+.img-sign-in {
+    display: block;
+    width: 50%;
+    object-fit: cover;
+    height: 420px;
+    object-position: top;
+
+    @include media-breakpoint-down(md) {
+        width: 100%;
+        height: 320px;
+    }
+}
+
+.modal-sign-in {
+    width: 50%;
+    padding: 2.5rem;
+
+    @include media-breakpoint-down(md) {
+        width: 100%;
+        padding: 1rem;
+    }
+}
+
+.icon-voted{
+    max-height:50px;
+    margin-bottom:$spacer*1.25;
+}
+
+.position-relative {
+    position: relative !important;
 }
 
 footer {

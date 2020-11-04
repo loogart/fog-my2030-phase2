@@ -19,11 +19,24 @@ $(document).ready(function () {
             $("#resultsGrid").toggleClass("d-none", this.checked);
         }).change();
     });
-    
+
     //rotate plus icons
     $('.filter-accordion').click(function () {
         $(this).children('.filter-plus').toggleClass('filter-plus-open');
     });
+
+
+    // toggle vote button look
+    $('.vote-now').click(function () {
+        if ($(this).hasClass("btn-outline-danger")) {
+            $('#popupUnvoted').modal('show');
+            $(this).removeClass('btn-outline-danger').addClass('btn-primary').text("Vote");
+        } else {
+            $('#popupVoted').modal('show');
+            $(this).removeClass('btn-primary').addClass('btn-outline-danger').text("Remove vote");
+        }
+    });
+
 });
 
 // Google Maps
@@ -32,55 +45,54 @@ function initMap() {
         zoom: 4,
         center: new google.maps.LatLng(55.1304, -96.3468),
         //map customization styles
-        styles: 
-        [
+        styles: [
             {
-            "elementType": "geometry",
-            "stylers": [
-                {
-                    "color": "#f5f5f5"
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#f5f5f5"
                   }
                 ]
               },
             {
-            "elementType": "labels.icon",
-            "stylers": [
-                {
-                    "visibility": "off"
+                "elementType": "labels.icon",
+                "stylers": [
+                    {
+                        "visibility": "off"
                   }
                 ]
               },
             {
-            "elementType": "labels.text.fill",
-            "stylers": [
-                {
-                    "color": "#616161"
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "color": "#616161"
                   }
                 ]
               },
             {
-            "elementType": "labels.text.stroke",
-            "stylers": [
-                {
-                    "color": "#f5f5f5"
+                "elementType": "labels.text.stroke",
+                "stylers": [
+                    {
+                        "color": "#f5f5f5"
                   }
                 ]
               },
             {
-            "featureType": "administrative.land_parcel",
-            "elementType": "labels.text.fill",
-            "stylers": [
-                {
-                    "color": "#bdbdbd"
+                "featureType": "administrative.land_parcel",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "color": "#bdbdbd"
                   }
                 ]
               },
-            {   
-            "featureType": "poi",
-            "elementType": "geometry",
-            "stylers": [
-                {
-                    "color": "#eeeeee"
+            {
+                "featureType": "poi",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#eeeeee"
                   }
                 ]
             },
@@ -93,7 +105,7 @@ function initMap() {
                   }
                 ]
               },
-            {   
+            {
                 "featureType": "poi.park",
                 "elementType": "geometry",
                 "stylers": [
@@ -120,7 +132,7 @@ function initMap() {
                       }
                     ]
                   },
-                    {
+            {
                 "featureType": "road.arterial",
                 "elementType": "labels.text.fill",
                 "stylers": [
@@ -129,7 +141,7 @@ function initMap() {
                       }
                     ]
                   },
-                {
+            {
                 "featureType": "road.highway",
                 "elementType": "geometry",
                 "stylers": [
@@ -138,7 +150,7 @@ function initMap() {
                       }
                     ]
                   },
-                {
+            {
                 "featureType": "road.highway",
                 "elementType": "labels.text.fill",
                 "stylers": [
@@ -147,7 +159,7 @@ function initMap() {
                       }
                     ]
                   },
-                {   
+            {
                 "featureType": "road.local",
                 "elementType": "labels.text.fill",
                 "stylers": [
@@ -226,18 +238,22 @@ function initMap() {
     });
 
     var contentString1 =
-        '<div id="content">' +
+        '<div id="content" style="max-width:320px">' +
         '<div id="siteNotice">' +
         '</div>' +
-        '<a href="./project.html" class="grid-burger__item for-map">' +
-        '<img src="./img/photo-burger1.jpg" class="img-map" alt="...">' +
-        '<span class="resto-name">Restaurant Name</span>' +
-        '<span class="burger-name">Poutine Name</span>' +
-        '<div class="d-flex justify-content-between">' +
-        '<span class="price">$18</span>' +
-        '<span class="distance">1.2km</span>' +
+        '<img src="./img/fallback-img.svg" class="card-img-top mb-3" alt="...">' +
+        '<h5 class="card-title">Name of initiative</h5>' +
+        '<p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>' +
+        '<div class="d-flex justify-content-between flex-wrap">' +
+        '<a href="#" class="btn btn-sm btn-outline-primary mb-2">View details</a>' +
+        '<a href="#" class="btn btn-sm btn-primary mb-2">Vote</a>' +
         '</div>' +
-        '</a>' +
+        '<div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">' +
+        '<ul class="list-inline mb-0">' +
+        '<li class="list-inline-item"><span class="badge bagde-pill badge-sdg5 pr-2">&nbsp;</span></li>' +
+        '<li class="list-inline-item"><span class="badge bagde-pill badge-sdg11 pr-2">&nbsp;</span></li> ' +
+        '</ul>' +
+        '</div>' +
         '</div>';
 
     var infowindow1 = new google.maps.InfoWindow({
@@ -261,18 +277,22 @@ function initMap() {
         title: 'Project 2'
     });
     var contentString2 =
-        '<div id="content">' +
+        '<div id="content" style="max-width:320px">' +
         '<div id="siteNotice">' +
         '</div>' +
-        '<a href="./burger.html" class="grid-burger__item for-map">' +
-        '<img src="./img/photo-burger2.jpg" class="img-map" alt="...">' +
-        '<span class="resto-name">Restaurant Name</span>' +
-        '<span class="burger-name">Poutine Name</span>' +
-        '<div class="d-flex justify-content-between">' +
-        '<span class="price">$18</span>' +
-        '<span class="distance">1.2km</span>' +
+        '<img src="./img/fallback-img.svg" class="card-img-top mb-3" alt="...">' +
+        '<h5 class="card-title">Name of initiative</h5>' +
+        '<p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>' +
+        '<div class="d-flex justify-content-between flex-wrap">' +
+        '<a href="#" class="btn btn-sm btn-outline-primary mb-2">View details</a>' +
+        '<a href="#" class="btn btn-sm btn-primary mb-2">Vote</a>' +
         '</div>' +
-        '</a>' +
+        '<div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">' +
+        '<ul class="list-inline mb-0">' +
+        '<li class="list-inline-item"><span class="badge bagde-pill badge-sdg3 pr-2">&nbsp;</span></li>' +
+        '<li class="list-inline-item"><span class="badge bagde-pill badge-sdg10 pr-2">&nbsp;</span></li> ' +
+        '</ul>' +
+        '</div>' +
         '</div>';
 
     var infowindow2 = new google.maps.InfoWindow({
@@ -296,18 +316,22 @@ function initMap() {
         title: 'Project 3'
     });
     var contentString3 =
-        '<div id="content">' +
+        '<div id="content" style="max-width:320px">' +
         '<div id="siteNotice">' +
         '</div>' +
-        '<a href="./burger.html" class="grid-burger__item for-map">' +
-        '<img src="./img/photo-burger3.jpg" class="img-map" alt="...">' +
-        '<span class="resto-name">Restaurant Name</span>' +
-        '<span class="burger-name">Poutine Name</span>' +
-        '<div class="d-flex justify-content-between">' +
-        '<span class="price">$18</span>' +
-        '<span class="distance">1.2km</span>' +
+        '<img src="./img/fallback-img.svg" class="card-img-top mb-3" alt="...">' +
+        '<h5 class="card-title">Name of initiative</h5>' +
+        '<p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>' +
+        '<div class="d-flex justify-content-between flex-wrap">' +
+        '<a href="#" class="btn btn-sm btn-outline-primary mb-2">View details</a>' +
+        '<a href="#" class="btn btn-sm btn-primary mb-2">Vote</a>' +
         '</div>' +
-        '</a>' +
+        '<div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">' +
+        '<ul class="list-inline mb-0">' +
+        '<li class="list-inline-item"><span class="badge bagde-pill badge-sdg6 pr-2">&nbsp;</span></li>' +
+        '<li class="list-inline-item"><span class="badge bagde-pill badge-sdg7 pr-2">&nbsp;</span></li> ' +
+        '</ul>' +
+        '</div>' +
         '</div>';
 
     var infowindow3 = new google.maps.InfoWindow({
@@ -331,18 +355,22 @@ function initMap() {
         title: 'Project 4'
     });
     var contentString4 =
-        '<div id="content">' +
+        '<div id="content" style="max-width:320px">' +
         '<div id="siteNotice">' +
         '</div>' +
-        '<a href="./burger.html" class="grid-burger__item for-map">' +
-        '<img src="./img/photo-burger4.jpg" class="img-map" alt="...">' +
-        '<span class="resto-name">Restaurant Name</span>' +
-        '<span class="burger-name">Poutine Name</span>' +
-        '<div class="d-flex justify-content-between">' +
-        '<span class="price">$18</span>' +
-        '<span class="distance">1.2km</span>' +
+        '<img src="./img/fallback-img.svg" class="card-img-top mb-3" alt="...">' +
+        '<h5 class="card-title">Name of initiative</h5>' +
+        '<p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>' +
+        '<div class="d-flex justify-content-between flex-wrap">' +
+        '<a href="#" class="btn btn-sm btn-outline-primary mb-2">View details</a>' +
+        '<a href="#" class="btn btn-sm btn-primary mb-2">Vote</a>' +
         '</div>' +
-        '</a>' +
+        '<div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">' +
+        '<ul class="list-inline mb-0">' +
+        '<li class="list-inline-item"><span class="badge bagde-pill badge-sdg1 pr-2">&nbsp;</span></li>' +
+        '<li class="list-inline-item"><span class="badge bagde-pill badge-sdg15 pr-2">&nbsp;</span></li> ' +
+        '</ul>' +
+        '</div>' +
         '</div>';
 
     var infowindow4 = new google.maps.InfoWindow({

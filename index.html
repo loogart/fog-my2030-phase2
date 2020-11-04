@@ -51,31 +51,17 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About </a>
+                        <a class="nav-link" href="https://futureofgood.co/recovery-projects/" target="_blank">About </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sign in</a>
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#popupSignIn">Sign in</a>
                     </li>
-                    <!--
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </li>
--->
                 </ul>
                 <form class="form-inline">
-                    <a class="btn btn-warning ml-0 ml-md-3" href="#!">Explore</a>
+                    <a class="btn btn-warning ml-0 ml-md-3" href="#explore">Explore</a>
                 </form>
             </div>
         </div>
@@ -86,11 +72,8 @@
 
             <!-- filters -->
             <nav class="filters">
-
                 <a href="#" class="d-inline-block d-md-none close-mobile-filters"><i class="fad fa-times-circle fa-2x"></i></a>
-
                 <h2 class="h5 mt-0">Find a project</h2>
-
                 <ul class="list-unstyled list-filters">
                     <!-- filter 1 -->
                     <li>
@@ -265,8 +248,8 @@
                         <div class="hero-text order-1 order-lg-0">
                             <h1><span class="supertitle">The state of the future is in your hands</span>What do you want the world to look like in 2030?</h1>
                             <p>You told us what your favourite recovery projects were. Now, your votes can help feature the projects inour stories and artwork through 2021. #my2030</p>
-                            <a class="btn btn-primary" href="#!">View all projects</a>
-                            <a class="d-block mt-3 small" href="#!">Create a free Future of Good account to vote for your favourite projects.</a>
+                            <a class="btn btn-primary shadow" href="#explore">View all projects</a>
+                            <a class="d-block mt-4 small" href="#!">Create a free Future of Good account to vote for your favourite projects.</a>
                         </div>
                         <img class="hero-img order-0 order-lg-1" src="./img/artwork.svg" alt="">
                         <a href="#" class="close-this"><i class="fad fa-times-circle fa-2x"></i></a>
@@ -274,7 +257,7 @@
                 </div>
 
                 <!-- Results header -->
-                <div class="container-fluid results-header">
+                <div class="container-fluid results-header" id="explore">
                     <span class="d-inline-block d-md-none">
                         <a class="open-mobile-filters py-3" href="#!"><i class="fas fa-sliders-h"></i></a>
                     </span>
@@ -293,19 +276,18 @@
                             <!-- card 1-->
                             <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                                 <div class="card">
-                                    <img src="..." class="card-img-top" alt="...">
+                                    <img src="./img/fallback-img.svg" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">Name of initiative</h5>
                                         <p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>
                                         <div class="d-flex justify-content-between flex-wrap">
-                                            <a href="#" class="btn btn-sm btn-outline-primary mb-2">View details</a>
-                                            <a href="#" class="btn btn-sm btn-primary mb-2">Vote</a>
+                                            <a href="project.html" class="btn btn-sm btn-outline-primary mb-2">View details</a>
+                                            <a href="#!" class="btn btn-sm btn-primary mb-2 vote-now">Vote</a>
                                         </div>
                                         <div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">
                                             <ul class="list-inline mb-0">
                                                 <li class="list-inline-item"><span class="badge bagde-pill badge-sdg1 pr-2">&nbsp;</span></li>
                                                 <li class="list-inline-item"><span class="badge bagde-pill badge-sdg6 pr-2">&nbsp;</span></li>
-
                                             </ul>
                                         </div>
                                     </div>
@@ -314,13 +296,13 @@
                             <!-- card 2-->
                             <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                                 <div class="card">
-                                    <img src="..." class="card-img-top" alt="...">
+                                    <img src="./img/fallback-img.svg" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">Name of initiative</h5>
                                         <p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>
                                         <div class="d-flex justify-content-between flex-wrap">
-                                            <a href="#" class="btn btn-sm btn-outline-primary mb-2">View details</a>
-                                            <a href="#" class="btn btn-sm btn-primary mb-2">Vote</a>
+                                            <a href="project.html" class="btn btn-sm btn-outline-primary mb-2">View details</a>
+                                            <a href="#!" class="btn btn-sm btn-primary mb-2 vote-now">Vote</a>
                                         </div>
                                         <div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">
                                             <ul class="list-inline mb-0">
@@ -335,13 +317,13 @@
                             <!-- card 3-->
                             <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                                 <div class="card">
-                                    <img src="..." class="card-img-top" alt="...">
+                                    <img src="./img/fallback-img.svg" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">Name of initiative</h5>
                                         <p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>
                                         <div class="d-flex justify-content-between flex-wrap">
-                                            <a href="#" class="btn btn-sm btn-outline-primary mb-2">View details</a>
-                                            <a href="#" class="btn btn-sm btn-primary mb-2">Vote</a>
+                                            <a href="project.html" class="btn btn-sm btn-outline-primary mb-2">View details</a>
+                                            <a href="#!" class="btn btn-sm btn-primary mb-2 vote-now">Vote</a>
                                         </div>
                                         <div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">
                                             <ul class="list-inline mb-0">
@@ -357,13 +339,13 @@
                             <!-- card 4-->
                             <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                                 <div class="card">
-                                    <img src="..." class="card-img-top" alt="...">
+                                    <img src="./img/fallback-img.svg" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">Name of initiative</h5>
                                         <p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>
                                         <div class="d-flex justify-content-between flex-wrap">
-                                            <a href="#" class="btn btn-sm btn-outline-primary mb-2">View details</a>
-                                            <a href="#" class="btn btn-sm btn-primary mb-2">Vote</a>
+                                            <a href="project.html" class="btn btn-sm btn-outline-primary mb-2">View details</a>
+                                            <a href="#!" class="btn btn-sm btn-primary mb-2 vote-now">Vote</a>
                                         </div>
                                         <div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">
                                             <ul class="list-inline mb-0">
@@ -377,19 +359,18 @@
                             </div> <!-- card 5-->
                             <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                                 <div class="card">
-                                    <img src="..." class="card-img-top" alt="...">
+                                    <img src="./img/fallback-img.svg" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">Name of initiative</h5>
                                         <p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>
                                         <div class="d-flex justify-content-between flex-wrap">
-                                            <a href="#" class="btn btn-sm btn-outline-primary mb-2">View details</a>
-                                            <a href="#" class="btn btn-sm btn-primary mb-2">Vote</a>
+                                            <a href="project.html" class="btn btn-sm btn-outline-primary mb-2">View details</a>
+                                            <a href="#!" class="btn btn-sm btn-primary mb-2 vote-now">Vote</a>
                                         </div>
                                         <div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">
                                             <ul class="list-inline mb-0">
                                                 <li class="list-inline-item"><span class="badge bagde-pill badge-sdg6 pr-2">&nbsp;</span></li>
                                                 <li class="list-inline-item"><span class="badge bagde-pill badge-sdg7 pr-2">&nbsp;</span></li>
-
                                             </ul>
                                         </div>
                                     </div>
@@ -398,13 +379,13 @@
                             <!-- card 6 -->
                             <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                                 <div class="card">
-                                    <img src="..." class="card-img-top" alt="...">
+                                    <img src="./img/fallback-img.svg" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">Name of initiative</h5>
                                         <p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>
                                         <div class="d-flex justify-content-between flex-wrap">
-                                            <a href="#" class="btn btn-sm btn-outline-primary mb-2">View details</a>
-                                            <a href="#" class="btn btn-sm btn-primary mb-2">Vote</a>
+                                            <a href="project.html" class="btn btn-sm btn-outline-primary mb-2">View details</a>
+                                            <a href="#!" class="btn btn-sm btn-primary mb-2 vote-now">Vote</a>
                                         </div>
                                         <div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">
                                             <ul class="list-inline mb-0">
@@ -419,13 +400,13 @@
                             <!-- card 7 -->
                             <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                                 <div class="card">
-                                    <img src="..." class="card-img-top" alt="...">
+                                    <img src="./img/fallback-img.svg" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">Name of initiative</h5>
                                         <p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>
                                         <div class="d-flex justify-content-between flex-wrap">
-                                            <a href="#" class="btn btn-sm btn-outline-primary mb-2">View details</a>
-                                            <a href="#" class="btn btn-sm btn-primary mb-2">Vote</a>
+                                            <a href="project.html" class="btn btn-sm btn-outline-primary mb-2">View details</a>
+                                            <a href="#!" class="btn btn-sm btn-primary mb-2 vote-now">Vote</a>
                                         </div>
                                         <div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">
                                             <ul class="list-inline mb-0">
@@ -440,13 +421,13 @@
                             <!-- card 8 -->
                             <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                                 <div class="card">
-                                    <img src="..." class="card-img-top" alt="...">
+                                    <img src="./img/fallback-img.svg" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">Name of initiative</h5>
                                         <p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>
                                         <div class="d-flex justify-content-between flex-wrap">
-                                            <a href="#" class="btn btn-sm btn-outline-primary mb-2">View details</a>
-                                            <a href="#" class="btn btn-sm btn-primary mb-2">Vote</a>
+                                            <a href="project.html" class="btn btn-sm btn-outline-primary mb-2">View details</a>
+                                            <a href="#!" class="btn btn-sm btn-primary mb-2 vote-now">Vote</a>
                                         </div>
                                         <div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">
                                             <ul class="list-inline mb-0">
@@ -461,13 +442,13 @@
                             <!-- card 9-->
                             <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                                 <div class="card">
-                                    <img src="..." class="card-img-top" alt="...">
+                                    <img src="./img/fallback-img.svg" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">Name of initiative</h5>
                                         <p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>
                                         <div class="d-flex justify-content-between flex-wrap">
-                                            <a href="#" class="btn btn-sm btn-outline-primary mb-2">View details</a>
-                                            <a href="#" class="btn btn-sm btn-primary mb-2">Vote</a>
+                                            <a href="project.html" class="btn btn-sm btn-outline-primary mb-2">View details</a>
+                                            <a href="#!" class="btn btn-sm btn-primary mb-2 vote-now">Vote</a>
                                         </div>
                                         <div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">
                                             <ul class="list-inline mb-0">
@@ -479,17 +460,17 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <!-- card 10-->
                             <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                                 <div class="card">
-                                    <img src="..." class="card-img-top" alt="...">
+                                    <img src="./img/fallback-img.svg" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">Name of initiative</h5>
                                         <p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>
                                         <div class="d-flex justify-content-between flex-wrap">
-                                            <a href="#" class="btn btn-sm btn-outline-primary mb-2">View details</a>
-                                            <a href="#" class="btn btn-sm btn-primary mb-2">Vote</a>
+                                            <a href="project.html" class="btn btn-sm btn-outline-primary mb-2">View details</a>
+                                            <a href="#!" class="btn btn-sm btn-primary mb-2 vote-now">Vote</a>
                                         </div>
                                         <div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">
                                             <ul class="list-inline mb-0">
@@ -501,17 +482,17 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <!-- card 11-->
                             <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                                 <div class="card">
-                                    <img src="..." class="card-img-top" alt="...">
+                                    <img src="./img/fallback-img.svg" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">Name of initiative</h5>
                                         <p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>
                                         <div class="d-flex justify-content-between flex-wrap">
-                                            <a href="#" class="btn btn-sm btn-outline-primary mb-2">View details</a>
-                                            <a href="#" class="btn btn-sm btn-primary mb-2">Vote</a>
+                                            <a href="project.html" class="btn btn-sm btn-outline-primary mb-2">View details</a>
+                                            <a href="#!" class="btn btn-sm btn-primary mb-2 vote-now">Vote</a>
                                         </div>
                                         <div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">
                                             <ul class="list-inline mb-0">
@@ -524,7 +505,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <!-- load more button -->
                             <div class="col-12 text-center">
                                 <a href="#" class="btn btn-outline-secondary mb-2"><i class="fas fa-plus mr-2"></i>Load more projects</a>
@@ -542,6 +523,73 @@
             </section>
         </div>
     </main>
+
+    <!-- Modals -->
+
+    <!-- Popup Sign in -->
+    <div class="modal fade" id="popupSignIn" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content flex-lg-row align-items-center overflow-hidden position-relative">
+                <a href="#" class="close-this" data-dismiss="modal" aria-label="Close">
+                    <i class="fad fa-times-circle fa-2x"></i>
+                </a>
+                <img class="img-sign-in" src="./img/artwork-sign-in.svg" alt="">
+                <div class="modal-sign-in">
+
+                    <h4 class="modal-title mb-3" id="exampleModalLabel">Sign in</h4>
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block mt-4">Sign in</button>
+                        <div class="text-center mt-3">
+                            <a href="#!">Create an account</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Voted -->
+    <div class="modal fade" id="popupVoted" data-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-4">
+                    <div class="text-center">
+                        <img class="icon-voted" src="./img/icon_voted.svg" alt="">
+                        <h5 class="mb-3" id="exampleModalLabel">Thanks for voting!</h5>
+                        <p>Your support for this project is helping shape the future!</p>
+                        <a href="#!" class="text-dark" data-dismiss="modal">Close this window</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Popup Unvoted -->
+    <div class="modal fade" id="popupUnvoted" data-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-4">
+                    <div class="text-center">
+                        <img class="icon-voted" src="./img/icon_unvoted.svg" alt="">
+                        <h5 class="mb-3" id="exampleModalLabel">Remove your vote?</h5>
+                        <p>You are about to remove your vote for this project. Are you sure you want to continue?</p>
+                        <div class="d-flex justify-content-between">
+                        <a href="#!" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</a>
+                        <a href="#!" class="btn btn-danger shadow" data-dismiss="modal" id="confirmRemove">Continue</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <div class="container">
@@ -568,10 +616,10 @@
                 <div class="col-md-3">
                     <h5>Follow us</h5>
                     <ul class="list-unstyled">
-                        <li><a href="" target="_blank"><i class="fab fa-twitter text-primary mr-2"></i>Twitter</a></li>
-                        <li><a href="" target="_blank"><i class="fab fa-facebook text-primary mr-2"></i>Facebook</a></li>
-                        <li><a href="" target="_blank"><i class="fab fa-instagram text-primary mr-2"></i>Instagram</a></li>
-                        <li><a href="" target="_blank"><i class="fab fa-linkedin text-primary mr-2"></i>LinkedIn</a></li>
+                        <li><a href="https://twitter.com/futureofgood" target="_blank"><i class="fab fa-twitter text-primary mr-2"></i>Twitter</a></li>
+                        <li><a href="https://www.facebook.com/futureofgood/" target="_blank"><i class="fab fa-facebook text-primary mr-2"></i>Facebook</a></li>
+                        <li><a href="https://www.instagram.com/futureofgood_/" target="_blank"><i class="fab fa-instagram text-primary mr-2"></i>Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/company/futureofgood/" target="_blank"><i class="fab fa-linkedin text-primary mr-2"></i>LinkedIn</a></li>
                     </ul>
                 </div>
             </div>
@@ -587,4 +635,5 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxEirwPY5lQXNNXuY9lzjQIwGJlWby7Nw&callback=initMap" async defer></script>
     <script src="./js/scripts.js"></script>
-</body></html>
+</body>
+</html>
