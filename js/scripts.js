@@ -1,5 +1,8 @@
-/* hide dismissable banner */
+/* Data aos animation */
+AOS.init();
+
 $(document).ready(function () {
+    /* hide dismissable banner */
     $('.close-this').click(function () {
         $('.hero-dismissable').hide();
     });

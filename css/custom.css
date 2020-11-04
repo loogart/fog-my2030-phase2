@@ -9921,6 +9921,10 @@ h3 {
     border-color: #dee2e6;
   }
 }
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+}
+
 .logo-navbar {
   width: 300px;
 }
@@ -10274,6 +10278,49 @@ h3 {
 
 .position-relative {
   position: relative !important;
+}
+
+.sub-nav {
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+}
+
+section.project {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.location {
+  color: #3d6833;
+  font-family: "Spartan", sans-serif;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.sdg-placeholder {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  margin-top: 30px;
+}
+.sdg-placeholder img {
+  width: 69px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+
+.voting-box {
+  border: 3px solid #eae8e8;
+  text-align: center;
+  padding: 2.5rem;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 40px;
 }
 
 footer {
