@@ -9921,7 +9921,12 @@ h3 {
     border-color: #dee2e6;
   }
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 900;
 }
 
@@ -10114,6 +10119,18 @@ h1, h2, h3, h4, h5, h6 {
   color: #3d6833;
   font-size: 16px;
   font-weight: 900;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card .card-author {
+  color: #629e51;
+  font-size: 13px;
+  margin-bottom: 7px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .card .card-text {
   font-size: 13px;
@@ -10298,6 +10315,15 @@ section.project {
   margin-top: 20px;
   margin-bottom: 20px;
   display: block;
+}
+
+.author {
+  font-family: "Spartan", sans-serif;
+  font-size: 14px;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  display: block;
+  color: #629e51;
 }
 
 .sdg-placeholder {
